@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>King — 个人品牌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">King</span>
+      <ul class="nav-links">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#services">服务</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 首页大标题 Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <p class="hero-label">Personal Brand</p>
+      <h1 class="hero-title">
+        让你的<br />
+        <em>品牌故事</em><br />
+        被世界看见
+      </h1>
+      <p class="hero-sub">策略 · 创意 · 执行 · 结果</p>
+      <a href="#contact" class="btn-primary">开始合作</a>
+    </div>
+    <div class="hero-deco">
+      <div class="deco-ring"></div>
+      <div class="deco-dot"></div>
+    </div>
+  </section>
+
+  <!-- 个人介绍 About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-tag">About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">你好，我是 King</h2>
+          <p>
+            我是一名专注于个人品牌建设与内容战略的创意顾问。
+            过去数年间，我帮助创业者、自由职业者和行业专家
+            从「默默无闻」走向「被人主动寻找」。
+          </p>
+          <p>
+            我相信每一个人都有值得被讲述的故事。
+            我的工作，就是找到那个故事的核心，
+            并把它转化成真实可感的品牌影响力。
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">50+</span>
+              <span class="stat-label">服务客户</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5年</span>
+              <span class="stat-label">行业经验</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">全力投入</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder">
+            <span>Your Photo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务列表 Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-tag">What I Do</div>
+      <h2 class="section-title center">我能为你做什么</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">01</div>
+          <h3>品牌定位</h3>
+          <p>挖掘你的核心差异点，明确受众画像，建立独一无二的个人品牌坐标系。</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">02</div>
+          <h3>内容战略</h3>
+          <p>制定长期内容规划，从选题到发布节奏，帮你持续输出高价值内容。</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">03</div>
+          <h3>视觉形象</h3>
+          <p>设计与品牌调性一致的视觉语言，包括配色、字体、排版风格指南。</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">04</div>
+          <h3>增长咨询</h3>
+          <p>分析数据，优化传播路径，把品牌影响力转化为真实的商业机会。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式 Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title center">聊聊你的项目</h2>
+      <p class="contact-sub">无论你处于哪个阶段，都欢迎发信给我，我会在 24 小时内回复。</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <span class="contact-label">邮箱</span>
+              <a href="mailto:hello@king.com">hello@king.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <span class="contact-label">微信</span>
+              <span>king_brand</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <span class="contact-label">社交媒体</span>
+              <span>@King</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" placeholder="你的名字" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="你的邮箱" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="简单描述一下你的项目或想法..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">发送消息</button>
+          <p class="form-success" id="form-success">消息已发送，期待与你合作！</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 King. 保留所有权利。</span>
+      <span>用心打造，一砖一瓦。</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
